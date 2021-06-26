@@ -4,6 +4,7 @@
   "description": "testing elm and tailwind2.2 jit ",
   "main": "index.js",
   "scripts": {
+    "tailwind":"tailwindcss -o src/assets/tailwind.css --watch",
     "start": "parcel serve ./src/index.html",
     "build": "parcel build ./src/index.html"
   },
@@ -11,7 +12,10 @@
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-elm": "^2.0.0-beta.3.1",
+    "autoprefixer": "^10.2.6",
     "elm": "^0.19.1-5",
-    "parcel": "^2.0.0-beta.3.1"
+    "parcel": "^2.0.0-beta.3.1",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   }
 }
